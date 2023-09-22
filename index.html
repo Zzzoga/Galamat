@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Galamat</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			<div class="preloader-imgs_wrapper">
+				<div class="preloader-imgs">
+					<div class="preloader-item first">
+						<img src="img/preloader_first.svg" alt="preloader" class="preloader_first">
+					</div>
+					<div class="preloader-item second">
+						<img src="img/preloader_second.svg" alt="preloader" class="preloader_second">
+					</div>
+					<div class="preloader-item third">
+						<img src="img/preloader_final.svg" alt="preloader" class="preloader_final">
+					</div>	
+				</div>
+			</div>
+			<div class="preloader-text">
+				<img src="img/preloader_text.svg" alt="preloader" class="preloader_text"> 
+			</div>
+		</div>
+	</div>
+
+	<div class="call__overlay">
+		<div class="call__mask"></div>
+		<div class="call__popup">
+			<div class="call__close">
+				<img src="img/call__close.svg" alt="">
+			</div>
+			<div class="call__img">
+				<img src="img/call__img.jpg" alt="">
+			</div>
+			<div class="call__popup__form">
+				<form action="#" class="call__form">
+					<input type="text" name="name" id="name" placeholder="Имя" class="call__input">
+					<input type="tel" name="phone" id="phone" placeholder="Телефон" class="call__input">
+					<div class="politics">
+						<input type="checkbox" id="politica" name="politic" value="yes" class="custom-checkbox">
+						<label for="politica">Я согласен на обработку персональных данных
+						</label>
+					</div>
+					<input type="submit" value="отправить" class="submit__btn btn">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu__container">
+		<div class="menu__wrapper">
+            <div class="menu-header">
+                <div class="header-left">
+                    <div class="burger-btn menu-burger">
+                        <div class="burger-icon">
+                            <span class="icon-line"></span>
+                            <span class="icon-line"></span>
+                        </div>
+                        <div class="burger-text">
+                            закрыть
+                        </div>
+                    </div>
+                    <!-- <a href="category.html" class="select-btn btn">Выбрать квартиру</a> -->
+                </div>
+                <a href="/" class="logo">Galamat</a>
+                <div class="header-right">
+                    <a href="tel:+73472680828" class="phone-btn">+7 347 268 08 28</a>
+                    <button class="call-btn btn">Заказать звонок</button>
+					<a href="tel:+73472680828" class="mobile__phone__menu">
+						<img src="img/mobile__phone.svg" alt="">
+					</a>
+                </div>
+            </div>
+			<div class="menu__list">
+				<a href="#about" class="menu-link title">о проекте</a>
+				<a href="#benefits" class="menu-link title">преимущества</a>
+				<a href="#plans" class="menu-link title">планировки</a>
+				<a href="#map" class="menu-link title">расположение</a>
+				<a href="#steps" class="menu-link title">ход строительства</a>
+                <a href="#contacts" class="menu-link title">Контакты</a>
+			</div>
+            <div class="menu-footer">
+                <div class="copyright">2023 © GALAMAT</div>
+                <!-- <div class="footer__menu">
+                    <a href="#steps" class="footer__menu-link">ход строительства</a>
+                    <a href="news-and-seller.html" class="footer__menu-link">новости</a>
+                    <a href="docs.html" class="footer__menu-link">документы</a>
+                </div> -->
+            </div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header-left" data-aos="fade-up" data-aos-duration="1000">
+			<div class="burger-btn">
+				<div class="burger-icon">
+					<span class="icon-line"></span>
+					<span class="icon-line"></span>
+					<span class="icon-line"></span>
+				</div>
+				<div class="burger-text">
+					Меню
+				</div>
+			</div>
+		</div>
+		<a href="/" class="logo" data-aos="fade-up" data-aos-duration="1000">Galamat</a>
+		<div class="header-right" data-aos="fade-up" data-aos-duration="1000">
+			<a href="tel:+77080258288" class="phone-btn">
+				+7 (708) 025-82-88
+			</a>
+			<button class="call-btn btn">Заказать звонок</button>
+			<a href="tel:+73472680828" class="mobile__phone">
+				<img src="img/mobile__phone.svg" alt="">
+			</a>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="post-header">
+			<div class="post__header__info" data-aos="fade-up" data-aos-duration="1000">
+				<div class="post__header__small">Великое начинается<br>с малого</div>
+				<div class="post__header__title">Galamat</div>
+			</div>
+			<div class="post-header-wrapper">
+				<div class="post-header-img">
+					<img src="img/post__header.jpg" alt="" class="post-header-bg">
+				</div>
+			</div>
+			<!-- <a href="#description" class="down-arrow"></a> -->
+		</div>
+
+		<div class="description" id="abot">
+			<div class="title description__title" data-aos="fade-up" data-aos-duration="1000">GALAMAT</div>
+			<div class="description__text" data-aos="fade-up" data-aos-duration="1000">
+				<p>Это жилье комфорт-класса, расположенное
+					в пригороде Алматы, п. Боралдай. Современная
+					архитектура, благоустройство и удобная локация
+					заложены в основе принципа комфортного
+					проживания. 
+					
+				</p>
+				<p>Жилой комплекс представляет собой ансамбль 
+					из шестнадцати 5-этажных блоков
+					с уникальным ландшафтным дизайном, где Вы
+					сможете наслаждаться уютом и спокойствием
+					как в собственных апартаментах,
+					так и за их пределами.
+				</p>
+			</div>
+		</div>
+
+		<div id="video" class="section wf-section">
+			<div class="sticky__wrapper">
+				<div class="sticky__slider" data-aos="fade-up" data-aos-duration="1000">
+					<div class="sticky__arrow prev"></div>
+					<div class="sticky__slider__wrapper">
+						<div class="sticky__slider__item">
+							<img src="img/sticky__item__1.jpg" alt="">
+						</div>
+						<div class="sticky__slider__item">
+							<img src="img/sticky__item__1.jpg" alt="">
+						</div>
+						<div class="sticky__slider__item">
+							<img src="img/sticky__item__1.jpg" alt="">
+						</div>
+					</div>
+					<div class="sticky__arrow next"></div>
+				</div>
+			</div>
+		 </div>
+
+		<div class="main-slider" id="benefits">
+			<div class="slider__img">
+				<div class="img__list">
+					<div class="slider__item" data-aos="fade-up" data-aos-duration="1000">
+						<img src="img/slider__item__1.jpg" alt="" class="main__slider-img">
+						<div class="slider__lines">
+							<img src="img/gold-lines-slider.svg" alt="">
+						</div>
+						<div class="slider__title">
+							<div class="subtitle title">Преимущества</div>
+							<div class="gentitle title">Прочность</div>
+						</div>
+						<div class="slider__description">
+							<ul>
+								<li>Фундамент – монолитный железобетонный</li>
+								<li>Каркас – монолитный железобетонный</li>
+							</ul>
+						</div>
+					</div>
+					<div class="slider__item">
+						<img src="img/slider-img (1).jpg" alt="" class="main__slider-img">
+						<div class="slider__lines">
+							<img src="img/gold-lines-slider.svg" alt="">
+						</div>
+						<div class="slider__title">
+							<div class="subtitle title">Преимущества</div>
+							<div class="gentitle title">Фасад</div>
+						</div>
+						<div class="slider__description">
+							Уникальный дизайн и цветовое решение фасада здания дополняют городской ансамбль, при этом заметно выделяя сам дом. В работе используются материалы премиального качества от международного бренда Kerama Marazzi.
+						</div>
+					</div>
+					<div class="slider__item">
+						<img src="img/slider-img (2).jpg" alt="" class="main__slider-img">
+						<div class="slider__lines">
+							<img src="img/gold-lines-slider.svg" alt="">
+						</div>
+						<div class="slider__title">
+							<div class="subtitle title">Преимущества</div>
+							<div class="gentitle title">Расположение</div>
+						</div>
+						<div class="slider__description">
+							Клубный дом расположен в историческом центре города. В ближайшей доступности кинотеатры, множество магазинов и новые интересные места для променада в центре старого города.
+						</div>
+					</div>
+					<div class="slider__item">
+						<img src="img/slider-img (3).jpg" alt="" class="main__slider-img">
+						<div class="slider__lines">
+							<img src="img/gold-lines-slider.svg" alt="">
+						</div>
+						<div class="slider__title">
+							<div class="subtitle title">Преимущества</div>
+							<div class="gentitle title">Закрытая территория</div>
+						</div>
+						<div class="slider__description">
+							Безопасность и сохранность имущества для Вас и Ваших близких гарантирует закрытая территория и система видеонаблюдения. Безопасность резидентов клуба – один из главных приоритетов.
+
+						</div>
+					</div>
+					<div class="slider__item">
+						<img src="img/slider-img (4).jpg" alt="" class="main__slider-img">
+						<div class="slider__lines">
+							<img src="img/gold-lines-slider.svg" alt="">
+						</div>
+						<div class="slider__title">
+							<div class="subtitle title">Преимущества</div>
+							<div class="gentitle title">Детская площадка</div>
+						</div>
+						<div class="slider__description">
+							Детская площадка во внутреннем дворе со спортивными снарядами и развивающими играми, где Ваш ребенок будет в безопасности. Современное оборудование и уникальные материалы с заботой о подрастающем поколении.
+						</div>
+					</div>
+					<div class="slider__item">
+						<img src="img/slider-img (5).jpg" alt="" class="main__slider-img">
+						<div class="slider__lines">
+							<img src="img/gold-lines-slider.svg" alt="">
+						</div>
+						<div class="slider__title">
+							<div class="subtitle title">Преимущества</div>
+							<div class="gentitle title">Квартиры</div>
+						</div>
+						<div class="slider__description">
+							Эксклюзивные варианты квартир от 42,5 до 301 м² с высокими потолками 2,8 м² и изысканными планировками. Ваш уникальный вид на город со своей собственной террасы, из первого ряда.
+						</div>
+					</div>
+				</div>
+				<div class="prev-arrow"></div>
+				<div class="next-arrow"></div>
+			</div>	
+		</div>
+
+		<div class="layout" id="plans">
+			<div class="layout__title title" data-aos="fade-up" data-aos-duration="1000">Планировки на ваш выбор</div>
+			<div class="layout__wraper" data-aos="fade-up" data-aos-duration="1000">
+				<div class="layout__arrow prev">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+						<path d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269205 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM-4.37114e-08 4.5L11 4.5L11 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+					</svg>
+				</div>
+				<div class="layout__list">
+					<div class="layout__item">
+						<img src="img/plans__1.png" alt="">
+						<a href="#" class="more__layout">Выбрать</a>
+					</div>
+					<div class="layout__item">
+						<img src="img/plans__1.png" alt="">
+						<a href="#" class="more__layout">Выбрать</a>
+					</div>
+					<div class="layout__item">
+						<img src="img/plans__1.png" alt="">
+						<a href="#" class="more__layout">Выбрать</a>
+					</div>
+				</div>
+				<div class="layout__arrow next">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+						<path d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269205 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM-4.37114e-08 4.5L11 4.5L11 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="infrastructure">
+			<div class="infrastructure__item" data-aos="fade-up" data-aos-duration="1000">
+				<div class="i__text">
+					<ul>
+						<li>Квартиры сдаются в улучшенной черновой отделке без межкомнатных стен</li>
+						<li>Водоснабжение – артезианская вода, скважины на глубине 200 метров</li>
+						<li>Собственная котельная на газе</li>
+						<li>5 этажей + 1 мансардный этаж</li>
+						<li>16 многоквартирных домов</li>
+						<li>Центральная канализация</li>
+						<li>Детские площадки</li>
+					</ul>
+				</div>
+				<a href="#" class="i__btn btn">Подробнее</a>
+			</div>
+		</div>
+
+		<div class="map section" id="map">
+			<div class="map__wrapper">
+				<img src="img/map.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="steps__main" id="steps">
+			<div class="steps__title-wrapper">
+				<div class="steps__title title" data-aos="fade-up" data-aos-duration="1000">ХОД СТРОИТЕЛЬСТВА</div>
+			</div>
+			<div class="steps__slider-main" data-aos="fade-up" data-aos-duration="1000">
+				<div class="arrow-prev"></div>
+				<div class="steps__overlay">
+					<div class="steps__wrap">
+						<div class="steps__slider-item">
+							<div class="s__slider-img"><img src="img/steps__1.jpg" alt=""></div>
+							<div class="s__slider-text">Июль 2023</div>
+						</div>
+						<div class="steps__slider-item">
+							<div class="s__slider-img"><img src="img/steps__1.jpg" alt=""></div>
+							<div class="s__slider-text">Август 2023</div>
+						</div>
+						<div class="steps__slider-item">
+							<div class="s__slider-img"><img src="img/steps__1.jpg" alt=""></div>
+							<div class="s__slider-text">Сентябрь 2023</div>
+						</div>
+					</div>
+				</div>
+				<div class="arrow-next"></div>
+			</div>
+		</div>
+
+		<div class="call" id="contacts">
+			<div class="call__title-wrapper">
+				<div class="call__title title" data-aos="fade-up" data-aos-duration="1000">Заказать звонок</div>
+			</div>
+			<form action="#" class="call__form" data-aos="fade-up" data-aos-duration="1000">
+				<input type="text" name="name" id="name" placeholder="Имя" class="call__input">
+				<input type="tel" name="phone" id="phone" placeholder="Телефон" class="call__input">
+				<div class="politics">
+					<input type="checkbox" id="politic" name="politic" value="yes" class="custom-checkbox">
+					<label for="politic">Я согласен на обработку персональных данных
+					</label>
+				</div>
+				<input type="submit" value="отправить" class="submit__btn btn">
+			</form>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__info">
+			<div class="footer__address">
+				<div class="f__address-item">
+					п.Боралдай<br>ул.Алатау дом 2г.
+				</div>
+				<div class="f__address-item">
+					Алматы<br>мк-р Самал-2, дом 58
+				</div>
+			</div>
+			<a href="tel:+77080258288" class="footer__phone title">+7 708 025 82 88</a>
+		</div>
+		<div class="footer__links">
+			<div class="f__links-item">2023 © GALAMAT</div>
+			<div class="f__links-item">
+				<a href="#" class="footer-politics">политика конфиденциальности</a>
+			</div>
+			<div class="f__links-item">
+				ДИЗАЙН И РАЗРАБОТКА - <a href="https://beznebes.ru/" class="beznebes" target="_blank">BEZNEBES</a>
+			</div>
+		</div>
+	</footer>
+	
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+	SmoothScroll({
+		animationTime    : 1000,
+		stepSize         : 50,
+
+		
+		accelerationDelta : 30,  
+		accelerationMax   : 2,   
+
+
+		keyboardSupport   : true,  
+		arrowScroll       : 50,
+
+
+		pulseAlgorithm   : true,
+		pulseScale       : 4,
+		pulseNormalize   : 1,
+
+		touchpadSupport   : true,
+	})
+	</script>
+	<script src="js/maskPhone.js"></script>
+	<script src="js/common.js"></script>
+	
+	
+</body>
+</html>

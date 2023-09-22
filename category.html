@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Выбор квартир | Время первых</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+
+	<div class="preloader">
+		<!-- <div class="preloader__left"></div>
+		<div class="preloader__right"></div> -->
+		<div class="preloader__wrapper">
+			<div class="preloader-imgs_wrapper">
+				<div class="preloader-imgs">
+					<div class="preloader-item first">
+						<img src="img/preloader_first.svg" alt="preloader" class="preloader_first">
+					</div>
+					<div class="preloader-item second">
+						<img src="img/preloader_second.svg" alt="preloader" class="preloader_second">
+					</div>
+					<div class="preloader-item third">
+						<img src="img/preloader_final.svg" alt="preloader" class="preloader_final">
+					</div>	
+				</div>
+			</div>
+			<div class="preloader-text">
+				<img src="img/preloader_text.svg" alt="preloader" class="preloader_text"> 
+			</div>
+		</div>
+	</div>
+
+	<div class="call__overlay">
+		<div class="call__mask"></div>
+		<div class="call__popup">
+			<div class="call__close">
+				<img src="img/call__close.svg" alt="">
+			</div>
+			<div class="call__img">
+				<img src="img/call__img.jpg" alt="">
+			</div>
+			<div class="call__popup__form">
+				<form action="#" class="call__form">
+					<input type="text" name="name" id="name" placeholder="Имя" class="call__input">
+					<input type="tel" name="phone" id="phone" placeholder="Телефон" class="call__input">
+					<div class="politics">
+						<input type="checkbox" id="politica" name="politic" value="yes" class="custom-checkbox">
+						<label for="politica">Я согласен на обработку персональных данных
+						</label>
+					</div>
+					<input type="submit" value="отправить" class="submit__btn btn">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu__container">
+		<div class="menu__wrapper">
+            <div class="menu-header">
+                <div class="header-left">
+                    <div class="burger-btn menu-burger">
+                        <div class="burger-icon">
+                            <span class="icon-line"></span>
+                            <span class="icon-line"></span>
+                        </div>
+                        <div class="burger-text">
+                            закрыть
+                        </div>
+                    </div>
+                    <a href="category.html" class="select-btn btn">Выбрать квартиру</a>
+                </div>
+                <a href="/" class="logo"></a>
+                <div class="header-right">
+                    <a href="#" class="phone-btn">
+                        +7 347 268 08 28
+                    </a>
+                    <button class="call-btn btn">Заказать звонок</button>
+					<a href="tel:+73472680828" class="mobile__phone__menu">
+						<img src="img/mobile__phone.svg" alt="">
+					</a>
+                </div>
+            </div>
+			<div class="menu__list">
+				<a href="category.html" class="menu-link title">выбор квартир</a>
+				<a href="about.html" class="menu-link title">о проекте</a>
+				<a href="infrastructure.html" class="menu-link title">инфраструктура</a>
+				<a href="gallery.html" class="menu-link title">галерея</a>
+				<a href="contacts.html" class="menu-link title">контакты</a>
+				<a href="#steps" class="menu-link title">ход строительства</a>
+                <a href="news-and-seller.html" class="menu-link title">новости</a>
+                <a href="docs.html" class="menu-link title">документы</a>
+			</div>
+            <div class="menu-footer">
+                <div class="copyright">2022 © ВЫБОР ПЕРВЫХ</div>
+                <!-- <div class="footer__menu">
+                    <a href="#steps" class="footer__menu-link">ход строительства</a>
+                    <a href="news-and-seller.html" class="footer__menu-link">новости</a>
+                    <a href="docs.html" class="footer__menu-link">документы</a>
+                </div> -->
+            </div>
+		</div>
+	</div>
+
+	<div class="news__popup-container">
+        <div class="news__popup-overlay"></div>
+        <div class="news__popup">
+            <div class="news__popup-close">
+                <img src="img/close-popup.svg" alt="close popup">
+            </div>
+            <img src="img/news__popup.jpg" alt="" class="news__popup-img">
+            <div class="news__popup-text">
+                <div class="np-text-date">29.11.2022</div>
+                <div class="np-text-title">Заголовок статьи или акции</div>
+                <div class="np-text-content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </div>
+            </div>
+            <div class="news__popup-share">
+                <a href="#" class="news__popup-btn">Поделиться новостью</a>
+            </div>
+        </div>
+    </div>
+
+	<header class="header">
+		<div class="header-left">
+			<div class="burger-btn">
+				<div class="burger-icon">
+					<span class="icon-line"></span>
+					<span class="icon-line"></span>
+					<span class="icon-line"></span>
+				</div>
+				<div class="burger-text">
+					Меню
+				</div>
+			</div>
+			<a href="category.html" class="select-btn btn">Выбрать квартиру</a>
+		</div>
+		<a href="/" class="logo"></a>
+		<div class="header-right">
+			<a href="tel:+79999999999" class="phone-btn">
+				+7 347 268 08 28
+			</a>
+			<button class="call-btn btn">Заказать звонок</button>
+			<a href="tel:+73472680828" class="mobile__phone">
+				<img src="img/mobile__phone.svg" alt="">
+			</a>
+		</div>
+	</header>
+
+	<main class="main">
+
+        
+
+        <div class="cat__nav">
+            <div class="cat__nav-container">
+                <img src="img/cat__close.svg" alt="" class="cat__close">
+                <a href="/" class="back__btn">
+                    <svg class="back__btn-svg" width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.646446 3.64645C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM22 3.5L1 3.5V4.5L22 4.5V3.5Z" fill="black"/>
+                    </svg>
+                    <span class="back__btn-text">Вернуться</span>
+                </a>
+                <div class="cat__nav-list">
+                    <div class="cat__nav-section">
+                        <div class="cat__nav-section-title cat__nav-list-title">Секция</div>
+                        <div class="cat__nav-section-wrapper">
+                            <a href="#" class="cat__nav-section-btn">А</a>
+                            <a href="#" class="cat__nav-section-btn">Б</a>
+                            <a href="#" class="cat__nav-section-btn">В</a>
+                            <a href="#" class="cat__nav-section-btn">Г</a>
+                        </div>
+                    </div>
+                    <div class="cat__nav-section">
+                        <div class="cat__nav-price-title cat__nav-list-title">Стоимость млн.руб.</div>
+                        <div class="cat__nav-price-wrapper">
+                                 <div class="price-value-left range-value-left">15</div>
+                                 <div id="price-range"></div>
+                                 <div class="price-value-right range-value-right">145</div>
+                        </div>
+                    </div>
+                    <div class="cat__nav-section">
+                        <div class="cat__nav-square-title cat__nav-list-title">Площадь м2</div>
+                        <div class="cat__nav-square-wrapper">
+                            <div class="square-value-left range-value-left">49</div>
+                            <div id="square-range"></div>
+                            <div class="square-value-right range-value-right">176</div>
+                        </div>
+                    </div>
+                    <div class="cat__nav-section">
+                        <div class="cat__nav-high-title cat__nav-list-title">Этаж</div>
+                        <div class="cat__nav-high-wrapper">
+                            <div class="high-value-left range-value-left">8</div>
+                            <div id="high-range"></div>
+                            <div class="high-value-right range-value-right">12</div>
+                        </div>
+                    </div>
+                    <div class="cat__nav-section cat__nav-btns">
+                        <a href="#" class="cat__nav-btn apply-btn btn">Применить</a>
+                        <a href="#" class="cat__nav-btn reset-btn btn">Сбросить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cat__container">
+            <div class="category__mobile">Подбор по параметрам</div>
+            <div class="cat__wrapper">
+                <div class="cat__header">
+                    <span class="cat__header-item">Планировка</span>
+                    <span class="cat__header-item">Секция</span>
+                    <span class="cat__header-item">Этаж</span>
+                    <span class="cat__header-item">квартира</span>
+                    <span class="cat__header-item">площадь</span>
+                    <span class="cat__header-item">цена</span>
+                </div>
+                <div class="cat__list">
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                    <div class="cat__list-item">
+                        <a href="#" class="cat__list-element">Смотреть планировку</a>
+                        <span class="cat__list-element">Секция 2</span>
+                        <span class="cat__list-element">12 этаж</span>
+                        <span class="cat__list-element">кв. №121</span>
+                        <span class="cat__list-element">34.98 м</span>
+                        <a href="#" class="cat__list-element price">Узнать цену</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+	
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/range.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+	SmoothScroll({
+		animationTime    : 1000,
+		stepSize         : 50,
+
+		
+		accelerationDelta : 30,  
+		accelerationMax   : 2,   
+
+
+		keyboardSupport   : true,  
+		arrowScroll       : 50,
+
+
+		pulseAlgorithm   : true,
+		pulseScale       : 4,
+		pulseNormalize   : 1,
+
+		touchpadSupport   : true,
+	})
+	</script>
+	<script src="js/maskPhone.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

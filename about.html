@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Главная | Время первых</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+
+	<!-- Здесь пишем код -->
+
+	<div class="preloader">
+		<!-- <div class="preloader__left"></div>
+		<div class="preloader__right"></div> -->
+		<div class="preloader__wrapper">
+			<div class="preloader-imgs_wrapper">
+				<div class="preloader-imgs">
+					<div class="preloader-item first">
+						<img src="img/preloader_first.svg" alt="preloader" class="preloader_first">
+					</div>
+					<div class="preloader-item second">
+						<img src="img/preloader_second.svg" alt="preloader" class="preloader_second">
+					</div>
+					<div class="preloader-item third">
+						<img src="img/preloader_final.svg" alt="preloader" class="preloader_final">
+					</div>	
+				</div>
+			</div>
+			<div class="preloader-text">
+				<img src="img/preloader_text.svg" alt="preloader" class="preloader_text"> 
+			</div>
+		</div>
+	</div>
+
+	<div class="call__overlay">
+		<div class="call__mask"></div>
+		<div class="call__popup">
+			<div class="call__close">
+				<img src="img/call__close.svg" alt="">
+			</div>
+			<div class="call__img">
+				<img src="img/call__img.jpg" alt="">
+			</div>
+			<div class="call__popup__form">
+				<form action="#" class="call__form">
+					<input type="text" name="name" id="name" placeholder="Имя" class="call__input">
+					<input type="tel" name="phone" id="phone" placeholder="Телефон" class="call__input">
+					<div class="politics">
+						<input type="checkbox" id="politica" name="politic" value="yes" class="custom-checkbox">
+						<label for="politica">Я согласен на обработку персональных данных
+						</label>
+					</div>
+					<input type="submit" value="отправить" class="submit__btn btn">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu__container">
+		<div class="menu__wrapper">
+            <div class="menu-header">
+                <div class="header-left">
+                    <div class="burger-btn menu-burger">
+                        <div class="burger-icon">
+                            <span class="icon-line"></span>
+                            <span class="icon-line"></span>
+                        </div>
+                        <div class="burger-text">
+                            закрыть
+                        </div>
+                    </div>
+                    <a href="category.html" class="select-btn btn">Выбрать квартиру</a>
+                </div>
+                <a href="/" class="logo"></a>
+                <div class="header-right">
+                    <a href="#" class="phone-btn">
+                        +7 347 268 08 28
+                    </a>
+                    <button class="call-btn btn">Заказать звонок</button>
+					<a href="tel:+73472680828" class="mobile__phone__menu">
+						<img src="img/mobile__phone.svg" alt="">
+					</a>
+                </div>
+            </div>
+			<div class="menu__list">
+				<a href="category.html" class="menu-link title">выбор квартир</a>
+				<a href="about.html" class="menu-link title">о проекте</a>
+				<a href="infrastructure.html" class="menu-link title">инфраструктура</a>
+				<a href="gallery.html" class="menu-link title">галерея</a>
+				<a href="contacts.html" class="menu-link title">контакты</a>
+				<a href="#steps" class="menu-link title">ход строительства</a>
+                <a href="news-and-seller.html" class="menu-link title">новости</a>
+                <a href="docs.html" class="menu-link title">документы</a>
+			</div>
+            <div class="menu-footer">
+                <div class="copyright">2022 © ВЫБОР ПЕРВЫХ</div>
+                <!-- <div class="footer__menu">
+                    <a href="#steps" class="footer__menu-link">ход строительства</a>
+                    <a href="news-and-seller.html" class="footer__menu-link">новости</a>
+                    <a href="docs.html" class="footer__menu-link">документы</a>
+                </div> -->
+            </div>
+		</div>
+	</div>
+
+	<div class="news__popup-container">
+        <div class="news__popup-overlay"></div>
+        <div class="news__popup">
+            <div class="news__popup-close">
+                <img src="img/close-popup.svg" alt="close popup">
+            </div>
+            <img src="img/news__popup.jpg" alt="" class="news__popup-img">
+            <div class="news__popup-text">
+                <div class="np-text-date">29.11.2022</div>
+                <div class="np-text-title">Заголовок статьи или акции</div>
+                <div class="np-text-content">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </div>
+            </div>
+            <div class="news__popup-share">
+                <a href="#" class="news__popup-btn">Поделиться новостью</a>
+            </div>
+        </div>
+    </div>
+
+	<header class="header">
+		<div class="header-left">
+			<div class="burger-btn">
+				<div class="burger-icon">
+					<span class="icon-line"></span>
+					<span class="icon-line"></span>
+					<span class="icon-line"></span>
+				</div>
+				<div class="burger-text">
+					Меню
+				</div>
+			</div>
+			<a href="category.html" class="select-btn btn">Выбрать квартиру</a>
+		</div>
+		<a href="/" class="logo"></a>
+		<div class="header-right">
+			<a href="tel:+79999999999" class="phone-btn">
+				+7 347 268 08 28
+			</a>
+			<button class="call-btn btn">Заказать звонок</button>
+			<a href="tel:+73472680828" class="mobile__phone">
+				<img src="img/mobile__phone.svg" alt="">
+			</a>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<div class="header__info">
+			<div class="header__info-title title">О проекте</div>
+			<div class="header__info-img">
+				<img src="img/about-bg.jpg" alt="">
+			</div>
+			<a href="#firsts-time" class="down-arrow h__info-btn"></a>
+		</div>
+
+		<div class="premain about-cat">
+			<img src="img/premain-bg.png" alt="" class="premain-bg">
+			<div class="premain__title title" id="firsts-time">выбор первых - он такой один</div>
+			<div class="default__text p__t-top">
+				Элитные квартиры с богатой инфраструктурой в 1 минуте от центра города квартиры от 42,5 до 301 м2 с закрытой территорией, террасами и патио в одном из лучших мест для жизни в Уфе
+			</div>
+			<div class="premain__slider">
+				<div class="premain__slider-info">
+					<div class="p__slider-text def">
+						Сочетание дизайнерских решений, материалов высшего качества и заботы о резидентах клуба. Изысканный стиль, который говорит сам за себя в каждой детали. Место, где начинается Ваша история.
+					</div>
+					<div class="p__slider-text color-text">
+						Премиальный дом в сердце старого города с подземным паркингом и закрытой территорией. Выбор, достойный первых.
+					</div>
+					<div class="p__slider-title title">Выбор, достойный первых</div>
+				</div>
+				<div class="premain__slider-img">
+					<div class="premain__slider-item">
+						<img src="img/premain__slider-1.jpg" alt="">
+					</div>
+					<div class="premain__slider-item">
+						<img src="img/premain__slider-2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="floor-plan">
+			<div class="floor__imgs">
+				<img src="img/floor-plan-3.jpg" alt="" class="first floor__img">
+				<img src="img/floor-plan-2.jpg" alt="" class="second floor__img">
+				<img src="img/floor-plan-1.jpg" alt="" class="third floor__img">
+			</div>
+			<div class="floor-plan__text">
+				<div class="fp__text-item title first">качественные <br>материалы</div>
+				<div class="fp__text-item title second">современные <br>планировки</div>
+				<div class="fp__text-item title third">закрытая <br>территория</div>
+			</div>
+			<div class="floor__mobile">
+				<div class="floor__mobile-item">
+					<img src="img/floor-plan-3.jpg" alt="" class="first floor__img">
+					<div class="fp__text-item title first">качественные <br>материалы</div>
+				</div>
+				<div class="floor__mobile-item">
+					<img src="img/floor-plan-2.jpg" alt="" class="first floor__img">
+					<div class="fp__text-item title second">современные <br>планировки</div>
+				</div>
+				<div class="floor__mobile-item">
+					<img src="img/floor-plan-1.jpg" alt="" class="first floor__img">
+					<div class="fp__text-item title third">закрытая <br>территория</div>
+				</div>
+			</div>
+			<div class="a-s__arrow-btn">
+				<div class="prev-arrow"></div>
+				<div class="next-arrow"></div>
+			</div>
+		</div>
+
+		<div class="about-slider">
+			<div class="about-slider__img">
+				<img src="img/about-slider-img.jpg" alt="">
+				<img src="img/about-slider-img (1).png" alt="">
+				<img src="img/about-slider-img (2).png" alt="">
+				<img src="img/about-slider-img (3).png" alt="">
+				<img src="img/about-slider-img (4).png" alt="">
+			</div>
+			<div class="about-slider__text">
+				<div class="a-s__text-block">
+					<div class="a-s__text-item">
+						<div class="a-s__text-title title">Безопасность</div>
+						<div class="a-s__text-text">
+							Закрытый отапливаемый паркинг с удобной системой проезда и расположения мест, которые будут удобны для автомобиля любых габаритов.
+						</div>
+					</div>
+					<div class="a-s__text-item">
+						<div class="a-s__text-title title">Лифты</div>
+						<div class="a-s__text-text">
+							Оформление, продуманное до мельчайших деталей, в сочетании с качественным исполнением. Схема размещения и внутреннее устройство лифтов разработаны с применением высоких технологий.
+						</div>
+					</div>
+					<div class="a-s__text-item">
+						<div class="a-s__text-title title">Умный дом и электричество
+						</div>
+						<div class="a-s__text-text">
+							Технология комфортной жизни, объединяющая системы безопасности и жизнеобеспечения. Современное решение для настоящего премиум-комфорта. Дом, который способен думать за Вас.
+						</div>
+					</div>
+					<div class="a-s__text-item">
+						<div class="a-s__text-title title">Технологии строительства
+						</div>
+						<div class="a-s__text-text">
+							Современные технологии строительства с применением последних разработок. Материалы премиального качества, современные фактуры и лучшие достижения инженерии. Изысканные сочетания, создающие неповторимый стиль.
+						</div>
+					</div>
+					<div class="a-s__text-item">
+						<div class="a-s__text-title title">Освещение</div>
+						<div class="a-s__text-text">
+							Удобная и продуманная до мельчайших деталей система освещения. Грамотное расположение источников освещения обеспечивает комфорт в любое время суток.
+						</div>
+					</div>
+				</div>
+				<div class="a-s__text-btn">
+					<div class="a-s__arrow-btn">
+						<div class="arrow-prev-black"></div>
+						<div class="arrow-next-black"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="partners">
+			<div class="partners__title-wrapper">
+				<div class="partners__title title">Партнеры</div>
+			</div>
+			<div class="partners__list">
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/alfa.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">Сбербанк</div>
+					</div>
+				</div>
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/sber.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">Альфа-банк</div>
+					</div>
+				</div>
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/vtb.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">ВТБ</div>
+					</div>
+				</div>
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/ural.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">Уралсиб</div>
+					</div>
+				</div>
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/psb.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">ПСБ</div>
+					</div>
+				</div>
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/otk.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">Открытие</div>
+					</div>
+				</div>
+				<div class="partners__item">
+					<div class="partners__logo">
+						<img src="img/metal.svg" alt="">
+					</div>
+					<div class="partner__info">
+						<div class="info__item">2023</div>
+						<div class="info__item">Металлинвестбанк</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="call">
+			<img src="img/call__bg.jpg" alt="" class="call-img">
+			<div class="call__title-wrapper">
+				<div class="call__title title">Заказать звонок</div>
+			</div>
+			<form action="#" class="call__form">
+				<input type="text" name="name" id="name" placeholder="Имя" class="call__input">
+				<input type="tel" name="phone" id="phone" placeholder="Телефон" class="call__input">
+				<div class="politics">
+					<input type="checkbox" id="politic" name="politic" value="yes" class="custom-checkbox">
+					<label for="politic">Я согласен на обработку персональных<br>данных
+					</label>
+				</div>
+				<input type="submit" value="отправить" class="submit__btn btn">
+			</form>
+			<div class="left__spiral">
+				<img src="img/call__spiral.png" alt="">
+			</div>
+			<div class="right__spiral">
+				<img src="img/call__spiral.png" alt="">
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__info">
+			<div class="footer__address">
+				<div class="f__address-item">
+					Офис продаж <br>Верхнеторговая площадь, д.6 <br>офис 17
+				</div>
+				<div class="f__address-item">
+					Почта <br>sz_ssi@bk.ru
+				</div>
+			</div>
+			<a href="tel:+73472680828" class="footer__phone title">+7 347 268 08 28</a>
+		</div>
+		<div class="footer__links">
+			<div class="f__links-item">2022 © ВЫБОР ПЕРВЫХ</div>
+			<div class="f__links-item">
+				<a href="#" class="footer-politics">политика конфиденциальности</a>
+			</div>
+			<div class="f__links-item">
+				ДИЗАЙН И РАЗРАБОТКА - <a href="https://beznebes.ru/" class="beznebes" target="_blank">BEZNEBES</a>
+			</div>
+		</div>
+		<div class="footer__logo">
+			<img src="img/footer__logo.png" alt="" class="footer__img">
+			<img src="img/mobile__footer.svg" alt="" class="mobile__footer__img">
+		</div>
+	</footer>
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+		SmoothScroll({
+			animationTime    : 1000,
+			stepSize         : 50,
+	
+			
+			accelerationDelta : 30,  
+			accelerationMax   : 2,   
+	
+	
+			keyboardSupport   : true,  
+			arrowScroll       : 50,
+	
+	
+			pulseAlgorithm   : true,
+			pulseScale       : 4,
+			pulseNormalize   : 1,
+	
+			touchpadSupport   : true,
+		})
+		</script>
+	<script src="js/maskPhone.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
