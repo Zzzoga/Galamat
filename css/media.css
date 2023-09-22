@@ -3939,9 +3939,8 @@
 	.best__item.color__text {
 		color: #DBBC9A;
 	}
-
 	.post-header-wrapper {
-	height: 55vh;
+		height: 465px;
 	}
 	.post-header-bg {
 		/* width: 100%; */
@@ -3974,6 +3973,9 @@
 	}
 	.post-header {
 		height: 500px;
+	}
+	.post__header__info {
+	    height: 100%;
 	}
 	.down-arrow {
 		display: none;
