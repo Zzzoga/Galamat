@@ -4219,7 +4219,7 @@
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-image: url(../img/layout_bg.jpg);
-		padding: 70px 0 151px 0;
+		padding: 70px 0 0 0;
 		background-size: 600%;
 		position: relative;
 		margin-top: 140px;
@@ -5623,7 +5623,7 @@
 	
 	.layout__list {
 	    max-width: 340px;
-	    max-height: 240px;
+	    max-height: 380px;
 	}
 	
 	a.more__layout {
